@@ -27,7 +27,6 @@
     "deploy": "gh-pages -d build",
     "predeploy": "yarn run build"
   },
-  "homepage": "https://lixuexiao.github.io/junes-notes/",
   "eslintConfig": {
     "extends": "react-app"
   },
