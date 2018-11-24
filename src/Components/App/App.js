@@ -10,10 +10,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact={true} path={"/nomad-notes/"} component={Notes} />
-          <Route path={"/nomad-notes/add"} component={Add} />
-          <Route path={"/nomad-notes/note/:id"} component={Note} />
-          <Route path={"/nomad-notes/edit/:id"} component={Edit} />
+          <Route exact={true} path={"/junes-notes/"} component={Notes} />
+          <Route path={"/junes-notes/add"} component={Add} />
+          <Route path={"/junes-notes/note/:id"} component={Note} />
+          <Route path={"/junes-notes/edit/:id"} component={Edit} />
         </Switch>
       </BrowserRouter>
     );
