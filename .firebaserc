@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "junes-note"
+    "default": "junes-note",
+    "testing": "apollo-notes"
   }
 }

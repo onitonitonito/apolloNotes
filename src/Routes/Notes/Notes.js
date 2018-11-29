@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Plus } from "../../Components/plus.svg";
 import styled from "styled-components";
 import { GET_NOTES } from "../../queries";
+import logo from "./apolloLogo.png";
 
 const Header = styled.div`
   margin-bottom: 50px;
@@ -59,19 +60,23 @@ const NoteTitle = styled.span`
 `;
 
 export default class NotesContainer extends React.Component {
+
   render() {
+    let subTitle = 'Let\'s take a note /w MD, enhancing rich expression.';
+    let mainTitle = 'Apollo-Notes';
+
     return (
       <>
         <Header>
           <Title>
-            junes Notes
+            <img src={logo} width='70' />{mainTitle}
             <Link to={"/add"}>
               <Button>
                 <Plus />
               </Button>
             </Link>
           </Title>
-          <Subtitle>Taking notes while we learn.</Subtitle>
+          <Subtitle>{subTitle}</Subtitle>
         </Header>
         <Notes>
           <Query query={GET_NOTES}>
