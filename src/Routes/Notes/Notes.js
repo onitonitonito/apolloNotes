@@ -1,10 +1,10 @@
 import React from "react";
 import { Query } from "react-apollo";
 import { Link } from "react-router-dom";
-import { ReactComponent as Plus } from "../../Components/plus.svg";
+import { ReactComponent as Plus } from "../../static/img/plus.svg";
 import styled from "styled-components";
 import { GET_NOTES } from "../../queries";
-import logo from "./apolloLogo.png";
+import logo from "../../static/img/apolloLogo.png";
 
 const Header = styled.div`
   margin-bottom: 50px;
@@ -62,14 +62,14 @@ const NoteTitle = styled.span`
 export default class NotesContainer extends React.Component {
 
   render() {
-    let subTitle = 'Let\'s take a note /w MD, enhancing rich expression.';
     let mainTitle = 'Apollo-Notes';
+    let subTitle = 'Let\'s take a note /w MD, enhancing rich expression.';
 
     return (
       <>
         <Header>
           <Title>
-            <img src={logo} width='70' />{mainTitle}
+            <img src={logo} width='70' alt='apolloLogo'/>{mainTitle}
             <Link to={"/add"}>
               <Button>
                 <Plus />

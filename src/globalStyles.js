@@ -5,6 +5,7 @@ injectGlobal`
         --greyColor: #A2A19E;
         --blackColor: #373630;
     }
+
     body{
         background-color:#F7F5F3;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -12,18 +13,22 @@ injectGlobal`
         padding:50px 100px;
         margin:0;
     }
+
     #root{
         max-width:1000px;
         width:100%;
         margin:0 auto;
     }
+
     a {
         color:inherit;
         text-decoration:none;
     }
+
     div{
         margin:0;
     }
+
     input,
     textarea{
         appearance:none;
@@ -38,9 +43,11 @@ injectGlobal`
             outline:none;
         }
     }
+
     .markdown a{
         text-decoration:underline;
     }
+
     button{
         appearance:none;
         border:none;
